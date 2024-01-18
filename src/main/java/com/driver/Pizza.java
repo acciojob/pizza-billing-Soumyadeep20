@@ -4,6 +4,10 @@ public class Pizza {
 
     int price;
    public Boolean isVeg;
+   private Boolean ac=false;
+   private Boolean at=false;
+    private Boolean ap=false;
+
     public String bill;
 /*Base Price Of The Pizza: 400
 Extra Cheese Added: 80
@@ -26,12 +30,18 @@ Total Price: 600*/
     }
 
     public void addExtraCheese(){
+        if(ac)
+            return;
+        ac=true;
         price +=80;
         bill +="\nExtra Cheese Added: 80";
         // your code goes here
     }
 
     public void addExtraToppings(){
+        if(at)
+            return;
+        at=true;
         if(isVeg) {
             price += 70;
             bill+="\nToppings Added: 70";
@@ -45,6 +55,9 @@ Total Price: 600*/
     }
 
     public void addTakeaway(){
+        if(ap)
+            return;
+        ap=true;
         price +=20;
         bill +="\nPaperbag Added: 20";
         // your code goes here
