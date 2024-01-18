@@ -44,11 +44,11 @@ Total Price: 600*/
         at=true;
         if(isVeg) {
             price += 70;
-            bill+="\nToppings Added: 70";
+            bill+="\nExtra Toppings Added: 70";
         }
         else {
             price += 120;
-            bill+="\nToppings Added: 120";
+            bill+="\nExtra Toppings Added: 120";
         }
 
         // your code goes here
