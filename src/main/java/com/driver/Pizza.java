@@ -67,7 +67,8 @@ Total Price: 600*/
     public String getBill(){
         // your code goes here
         if(b)
-            bill+="\nTotal Price: "+price;
+            return this.bill;
+        bill+="\nTotal Price: "+price;
         return this.bill;
     }
 }
