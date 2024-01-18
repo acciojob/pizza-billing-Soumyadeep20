@@ -68,6 +68,7 @@ Total Price: 600*/
         // your code goes here
         if(b)
             return this.bill;
+        b=true;
         bill+="\nTotal Price: "+price;
         return this.bill;
     }
