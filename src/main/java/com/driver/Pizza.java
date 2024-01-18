@@ -7,6 +7,7 @@ public class Pizza {
    private Boolean ac=false;
    private Boolean at=false;
     private Boolean ap=false;
+    private Boolean b=false;
 
     public String bill;
 /*Base Price Of The Pizza: 400
@@ -65,7 +66,8 @@ Total Price: 600*/
 
     public String getBill(){
         // your code goes here
-        bill+="\nTotal Price: "+price;
+        if(b)
+            bill+="\nTotal Price: "+price;
         return this.bill;
     }
 }
