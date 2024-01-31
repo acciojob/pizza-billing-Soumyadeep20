@@ -40,7 +40,7 @@ Total Price: 600*/
     }
 
     public void addExtraToppings(){
-        if(at)
+        if(at && !ac)
             return;
         at=true;
         if(isVeg) {
