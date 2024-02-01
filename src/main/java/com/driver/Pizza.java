@@ -62,7 +62,7 @@ Total Price: 600*/
             return;
         ap=true;
         price +=20;
-        bill +="\nPaperbag Added: 20";
+        
         // your code goes here
     }
 
@@ -81,6 +81,8 @@ Total Price: 600*/
                 bill+="\nExtra Toppings Added: 120";
                 
         }
+        if(ap)
+            bill +="\nPaperbag Added: 20";
         
             
         bill+="\nTotal Price: "+price;
