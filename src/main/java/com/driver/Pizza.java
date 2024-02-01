@@ -35,23 +35,23 @@ Total Price: 600*/
             return;
         ac=true;
         price +=80;
-        bill +="\nExtra Cheese Added: 80";
+        
         // your code goes here
     }
 
     public void addExtraToppings(){
-        if(ac){
+        
         if(at) return;
             at=true;
             if(isVeg) {
             price += 70;
-            bill+="\nExtra Toppings Added: 70";
+            
             }
             else {
             price += 120;
-            bill+="\nExtra Toppings Added: 120";
+            
             }
-            }
+            
        
 
         // your code goes here
@@ -71,6 +71,18 @@ Total Price: 600*/
         if(b)
             return this.bill;
         b=true;
+        if(ac)
+             bill +="\nExtra Cheese Added: 80";
+        if(at)
+        {
+            if(isVeg)
+                bill+="\nExtra Toppings Added: 70";
+            else
+                bill+="\nExtra Toppings Added: 120";
+                
+        }
+        
+            
         bill+="\nTotal Price: "+price;
         return this.bill;
     }
