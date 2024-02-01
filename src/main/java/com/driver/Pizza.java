@@ -2,14 +2,14 @@ package com.driver;
 
 public class Pizza {
 
-    int price;
-   public Boolean isVeg;
+    private int price;
+   private Boolean isVeg;
    private Boolean ac=false;
    private Boolean at=false;
     private Boolean ap=false;
     private Boolean b=false;
 
-    public String bill;
+    private String bill;
 /*Base Price Of The Pizza: 400
 Extra Cheese Added: 80
 Extra Toppings Added: 120
@@ -85,7 +85,7 @@ Total Price: 600*/
             bill +="\nPaperbag Added: 20";
         
             
-        bill+="\nTotal Price: "+price;
+        bill+="\nTotal Price: "+price+"\n";
         return this.bill;
     }
 }
