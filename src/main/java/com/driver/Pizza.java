@@ -40,17 +40,19 @@ Total Price: 600*/
     }
 
     public void addExtraToppings(){
-        if(at || !ac)
-            return;
-        at=true;
-        if(isVeg) {
+        if(ac){
+        if(at) return;
+            at=true;
+            if(isVeg) {
             price += 70;
             bill+="\nExtra Toppings Added: 70";
-        }
-        else {
+            }
+            else {
             price += 120;
             bill+="\nExtra Toppings Added: 120";
-        }
+            }
+            }
+       
 
         // your code goes here
     }
